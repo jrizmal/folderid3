@@ -1,7 +1,7 @@
 from setuptools import setup
 setup(
-  name = 'id3-folder-editor',
-  packages = ['id3-folder-editor'],
+  name = 'folderid3',
+  packages = ['folderid3'],
   version = '0.1',
   description = 'A tool for quick editing od id3 tags of audio files in a folder.',
   author = 'Jaka Rizmal',
