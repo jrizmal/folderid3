@@ -2,7 +2,7 @@ from setuptools import setup
 setup(
   name = 'folderid3',
   packages = ['folderid3'],
-  version = '0.4',
+  version = '0.4.1',
   description = 'A tool for quick editing od id3 tags of audio files in a folder.',
   author = 'Jaka Rizmal',
   author_email = 'jrizmal@gmail.com',

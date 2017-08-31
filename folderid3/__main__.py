@@ -1,6 +1,5 @@
 import os
 import eyed3
-import Tkinter, tkFileDialog
 
 def RepresentsInt(s):
     try: 
@@ -65,10 +64,8 @@ def SpremeniTage(path, filename, separator, album_name, artist_album, mesto_sepa
 
 
 a = raw_input("\033[92mWelcome to id3 folder tag editor. Press enter to continue.")
-#odpre okno za izbiro mape
-root = Tkinter.Tk()
-root.withdraw()
-file_path = tkFileDialog.askdirectory()
+
+file_path = raw_input("\033[92mEnter a folder path: ")
 #naredi seznam vseh datotek v mapi
 songs = os.listdir(file_path)
 #vprasa za naslov albuma in izvajalca labuma. ce izvajalca albuma nebi bilo potem itunes vrze vsako pesem za sebe
@@ -77,7 +74,7 @@ album_artist = raw_input("\033[92mEnter an album artist: ").strip()
 
 while True:
     individualno = raw_input("\033[92mDo you want to edit [a]one ate a time or [b]all at once?: ")
-    if individualno!="p" and individualno!="n":
+    if individualno!="a" and individualno!="b":
         print("\033[91mError: Enter a or b")
         continue
     else:
